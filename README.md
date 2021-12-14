@@ -75,5 +75,5 @@ The outputs are stored in two different folders: *Figures* contains the ROC curv
 * *tpr.csv* reports average true positive rate values (among repetitions and nested CV splits)
 
 ## Authors
-* **Andrea Barucci** - *Researcher at at Institute of Applied Physics "Nello Carrara" (IFAC) – National Council of Research (CNR), Sesto Fiorentino, Italy.* Email address: <a.barucci@ifac.cnr.it>
+* **Andrea Barucci, MSc, PhD** - *Researcher at at Institute of Applied Physics "Nello Carrara" (IFAC) – National Council of Research (CNR), Sesto Fiorentino, Italy.* Email address: <a.barucci@ifac.cnr.it>
 
