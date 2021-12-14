@@ -8,7 +8,10 @@ A. Barucci, C. Cucci, M. Franci, M. Loschiavo and F. Argenti, **A Deep Learning 
 
 @ARTICLE{9528382,  author={Barucci, Andrea and Cucci, Costanza and Franci, Massimiliano and Loschiavo, Marco and Argenti, Fabrizio},  journal={IEEE Access},   title={A Deep Learning Approach to Ancient Egyptian Hieroglyphs Classification},   year={2021},  volume={9},  number={},  pages={123438-123447},  doi={10.1109/ACCESS.2021.3110082}}
 
-This document provides a quick introduction to the SCRIPT NAME HERE to help new users get started.  
+This document provides a quick introduction to the SCRIPT NAME HERE to help new users get started. In addition to the source code, we also provide a [link](https://en.wikipedia.org/wiki/Pyramid_of_Unas) to the dataset containing 4210 manually annotated images of Egyptian hieroglyphs found in the Pyramid of Unas. The dataset can be dowloaded [here](http://iamai.nl/downloads/GlyphDataset.zip).
+
+Authors wishes to express their gratitute for the [seminal work of Franken](https://github.com/morrisfranken/glyphreader).
+
 
 Please read the [LICENSE.md](./LICENSE.md) file before using *Glyphnet*.
 
@@ -17,14 +20,6 @@ Nowadays, advances in Artificial Intelligence (AI), especially in machine and de
 
 ![plot](./Features2_running.png)
 ![plot](./Glyphnet.tiff)
-
-
-
-
-In addition to the source code, we also provide a link to the dataset containing 4210 manually annotated images of Egyptian hieroglyphs found in the Pyramid of Unas (https://en.wikipedia.org/wiki/Pyramid_of_Unas). The dataset can be dowloaded here: http://iamai.nl/downloads/GlyphDataset.zip.
-
-Authors wishes to express their gratitute for the seminal work of Franken: https://github.com/morrisfranken/glyphreader
-
 
 ## Requirements (TO DO)
 
@@ -83,5 +78,6 @@ The outputs are stored in two different folders: *Figures* contains the ROC curv
 * *tpr.csv* reports average true positive rate values (among repetitions and nested CV splits)
 
 ## Authors
-* **Andrea Barucci, MSc, PhD** - *Researcher at at Institute of Applied Physics "Nello Carrara" (IFAC) – National Council of Research (CNR), Sesto Fiorentino, Italy.* Email address: <a.barucci@ifac.cnr.it>
-
+* **Andrea Barucci, MSc, PhD** - *Researcher at the Institute of Applied Physics "Nello Carrara" (IFAC) – National Council of Research (CNR), Sesto Fiorentino, Italy.* Email address: <a.barucci@ifac.cnr.it>
+* **Tommaso Guidi, BSc** - *Master Degree student in Artificial Intelligence and Automation Engineering - Department of Information engineering and mathematics, University of Siena, Siena, Italy. Email address: <t.guidi@student.unisi.it >
+* * **Chiara Marzi, MSc, PhD** - *Postdoctoral Research Fellow at the Institute of Applied Physics "Nello Carrara" (IFAC) – National Council of Research (CNR), Sesto Fiorentino, Italy.* Email address: <c.marzi@ifac.cnr.it>
