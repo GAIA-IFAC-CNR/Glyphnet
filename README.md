@@ -79,5 +79,6 @@ The outputs are stored in two different folders: *Figures* contains the ROC curv
 
 ## Authors
 * **Andrea Barucci, MSc, PhD** - *Researcher at the Institute of Applied Physics "Nello Carrara" (IFAC) – National Council of Research (CNR), Sesto Fiorentino, Italy.* Email address: <a.barucci@ifac.cnr.it>
+* **Fabrizio Argenti, MSc, PhD** - *Associate Professor at the Department of Information Engineering (DINFO), University of Florence, Florence, Italy*. Email address: <fabrizio.argenti@unifi.it>
 * **Tommaso Guidi, BSc** - *Master Degree student in Artificial Intelligence and Automation Engineering - Department of Information engineering and mathematics, University of Siena, Siena, Italy. Email address: <t.guidi@student.unisi.it >
 * **Chiara Marzi, MSc, PhD** - *Postdoctoral Research Fellow at the Institute of Applied Physics "Nello Carrara" (IFAC) – National Council of Research (CNR), Sesto Fiorentino, Italy.* Email address: <c.marzi@ifac.cnr.it>
