@@ -18,6 +18,14 @@ Nowadays, advances in Artificial Intelligence (AI), especially in machine and de
 ![plot](./Features2_running.png)
 ![plot](./Glyphnet.tiff)
 
+
+
+
+In addition to the source code, we also provide a link to the dataset containing 4210 manually annotated images of Egyptian hieroglyphs found in the Pyramid of Unas (https://en.wikipedia.org/wiki/Pyramid_of_Unas). The dataset can be dowloaded here: http://iamai.nl/downloads/GlyphDataset.zip.
+
+Authors wishes to express their gratitute for the seminal work of Franken: https://github.com/morrisfranken/glyphreader
+
+
 ## Requirements (TO DO)
 
 Open a terminal window (for Unix users) or Anaconda Prompt (for Windows users), activate or create a Python environment with Python version 3.9.1 installed (we recommend to create a new Python environment, see below) and install the following Python packages (if packages already exist, check the version)
