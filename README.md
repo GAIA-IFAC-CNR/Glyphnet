@@ -21,39 +21,15 @@ Nowadays, advances in Artificial Intelligence (AI), especially in machine and de
 ![plot](./Features2_running.png)
 ![plot](./Glyphnet.tiff)
 
-## Requirements (TO DO)
+## Usage
+To set up your system and use Glyphnet, follow the instruction in the [installation](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/INSTALL.md) file.
 
-Open a terminal window (for Unix users) or Anaconda Prompt (for Windows users), activate or create a Python environment with Python version 3.9.1 installed (we recommend to create a new Python environment, see below) and install the following Python packages (if packages already exist, check the version)
-
-```
-pip install mlxtend==0.18.0
-pip install matplotlib==3.3.3
-pip install pandas==1.2.0
-pip install numpy==1.19.5
-pip install openpyxl==3.0.5
-pip install scikit-learn==0.24.0
-```
-
-
-### Create a new local Python virtual environment using conda: (TO DO)
-1. Create a new folder with the name of your new environment (e.g., Schizo_env)
-2. Open a terminal window (for Unix users) or Anaconda Prompt (for Windows users), from the folder that contains Schizo_env directory and type:
-
-```
-conda create --prefix ./Schizo_env
-```
-
-```
-conda activate ./Schizo_env
-```
-
-```
-conda install python=3.9.1
-```
-
-
-## Usage (TO DO)
-
+About the notebooks:
+-[model](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/model.ipynb) keeps all the model we used, such as Xception, InceptionV3, Glyphnet etc.
+-[util](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/util.ipynb) holds a set of useful functions that will be used along the entire code, e.g. to load the dataset, to plot the loss over training etc.
+-[util_img](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/util_img.ipynb) has a bunch of useful functions to work on images, e.g. resize, background elaboration, getting some statistical indicator such as mean, variance etc.
+-[dataset_preprocessing](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/dataset_preprocessing.ipynb) is the code dedicated to image preprocessing. It strongly uses util_img and outputs the datasets with resized and "cleaned" images.
+-[classification_VFinal](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/classification_VFinal.ipynb) is the main code. Here Glyphnet's magic happens.
 ```
 python Schizotypy_group_prediction.py --help
 
@@ -80,5 +56,5 @@ The outputs are stored in two different folders: *Figures* contains the ROC curv
 ## Authors
 * **Andrea Barucci, MSc, PhD** - *Researcher at the Institute of Applied Physics "Nello Carrara" (IFAC) – National Council of Research (CNR), Sesto Fiorentino, Italy.* Email address: <a.barucci@ifac.cnr.it>
 * **Fabrizio Argenti, MSc, PhD** - *Associate Professor at the Department of Information Engineering (DINFO), University of Florence, Florence, Italy*. Email address: <fabrizio.argenti@unifi.it>
-* **Tommaso Guidi, BSc** - *Master Degree student in Artificial Intelligence and Automation Engineering - Department of Information engineering and mathematics, University of Siena, Siena, Italy. Email address: <t.guidi@student.unisi.it >
+* **Tommaso Guidi, BSc** - *Master Degree student in Artificial Intelligence and Automation Engineering - Department of Information engineering and mathematics, University of Siena, Siena, Italy. Email address: <t.guidi@student.unisi.it>
 * **Chiara Marzi, MSc, PhD** - *Postdoctoral Research Fellow at the Institute of Applied Physics "Nello Carrara" (IFAC) – National Council of Research (CNR), Sesto Fiorentino, Italy.* Email address: <c.marzi@ifac.cnr.it>
