@@ -25,11 +25,11 @@ Nowadays, advances in Artificial Intelligence (AI), especially in machine and de
 To set up your system and use Glyphnet, follow the instruction in the [installation](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/INSTALL.md) file.
 
 About the notebooks:
--[model](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/model.ipynb) keeps all the model we used, such as Xception, InceptionV3, Glyphnet etc.
--[util](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/util.ipynb) holds a set of useful functions that will be used along the entire code, e.g. to load the dataset, to plot the loss over training etc.
--[util_img](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/util_img.ipynb) has a bunch of useful functions to work on images, e.g. resize, background elaboration, getting some statistical indicator such as mean, variance etc.
--[dataset_preprocessing](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/dataset_preprocessing.ipynb) is the code dedicated to image preprocessing. It strongly uses util_img and outputs the datasets with resized and "cleaned" images.
--[classification_VFinal](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/classification_VFinal.ipynb) is the main code. Here Glyphnet's magic happens.
+- [model](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/model.ipynb) keeps all the model we used, such as Xception, InceptionV3, Glyphnet etc.
+- [util](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/util.ipynb) holds a set of useful functions that will be used along the entire code, e.g. to load the dataset, to plot the loss over training etc.
+- [util_img](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/util_img.ipynb) has a bunch of useful functions to work on images, e.g. resize, background elaboration, getting some statistical indicator such as mean, variance etc.
+- [dataset_preprocessing](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/dataset_preprocessing.ipynb) is the code dedicated to image preprocessing. It strongly uses util_img and outputs the datasets with resized and "cleaned" images.
+- [classification_VFinal](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/classification_VFinal.ipynb) is the main code. Here Glyphnet's magic happens.
 ```
 python Schizotypy_group_prediction.py --help
 
