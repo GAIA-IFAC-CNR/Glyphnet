@@ -21,6 +21,8 @@ Nowadays, advances in Artificial Intelligence (AI), especially in machine and de
 ![plot](./Features2_running.png)
 ![plot](./Glyphnet.tiff)
 
+## Requirements
+Open a terminal window (for Unix users) or Anaconda Prompt (for Windows users), activate or create a Python environment with Python version 3.9.1 installed (we recommend to create a new Python environment, see below) and install the following Python packages (if packages already exist, check the version)
 ## Usage
 To set up your system and use Glyphnet, follow the instruction in the [installation](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/INSTALL.md) file.
 
