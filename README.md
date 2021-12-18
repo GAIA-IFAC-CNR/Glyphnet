@@ -23,8 +23,30 @@ Nowadays, advances in Artificial Intelligence (AI), especially in machine and de
 
 ## Requirements
 Open a terminal window (for Unix users) or Anaconda Prompt (for Windows users), activate or create a Python environment with Python version 3.9.1 installed (we recommend to create a new Python environment, see below) and install the following Python packages (if packages already exist, check the version)
-## Usage
-To set up your system and use Glyphnet, follow the instruction in the [installation](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/INSTALL.md) file.
+
+```
+pip install mlxtend==0.18.0
+pip install matplotlib==3.3.3
+pip install pandas==1.2.0
+pip install numpy==1.19.5
+pip install openpyxl==3.0.5
+pip install scikit-learn==0.24.0
+pip install tensorflow (ADD VERSION)
+pip install statistics (ADD VERSION)
+pip install scipy (ADD VERSION)
+```
+
+### Create a new Python virtual environment using conda and the requirements.txt file:
+
+- [Install](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) Anaconda
+- Create a new virtual environment with Python 3.9.1 and the libraries listed in the [requirements.txt](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/requirements.txt) file
+```
+conda create --name myenv --file requirements.txt
+```
+where *myenv* is the new virtual environment name.
+
+## Usage [TO REDO]
+
 
 About the notebooks:
 - [model](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/model.ipynb) keeps all the model we used, such as Xception, InceptionV3, Glyphnet etc.
