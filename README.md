@@ -45,6 +45,8 @@ conda create --name myenv --file requirements.txt
 ```
 where *myenv* is the new virtual environment name.
 
+INSERT HARDWARE, SO OF DEVELOPMENT/DEPLOYMENT
+
 ## Usage [TO REDO]
 
 
