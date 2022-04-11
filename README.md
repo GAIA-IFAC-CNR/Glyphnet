@@ -56,7 +56,7 @@ About the notebooks:
 
 Please remember that this version of Glyphnet works on images with resolution 100x100 and in .jpg format (also other formats should work but we didn't test them yet).
 
-Make sure that your dataset matches the labels we used that are listed as allowed_labels in the [utils](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/utils.ipynb) notebook. You also should save your images as filename_LABEL.jpg, where LABEL is the Gardiner code (all caps).
+Make sure that your dataset matches the labels we used that are listed as allowed_labels in the [utils](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/utils.ipynb) notebook. You also should save your images as filename_LABEL.jpg, where LABEL is the Gardiner code (all caps)(e.g. the file 00001_D2.jpg will be accepted by Glyphnet and treated as an example of D2 glyph).
 
 To use the code you simply need to specify the path to your dataset, that can also be a directory containing other directories provided that the load process looks for all the .jpg file inside the given folder.
 
