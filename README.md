@@ -61,7 +61,7 @@ Make sure that your dataset matches the labels we used that are listed as allowe
 To use the code you simply need to specify the path to your dataset, that can also be a directory containing other directories provided that the load process looks for all the .jpg file inside the given folder.
 
 ## Ouputs
-After the prediction, you will get some meaningful metrics, such as accuracy, precision, recall, f1 score. Moreover you will get also a summary of the performances class by class, thanks to the get_prediction_data function. A detailed guide for its use and to choose the parameters you need to pass it can be found in the [utils](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/utils.ipynb) notebook.
+After the prediction, you will get some meaningful metrics, such as accuracy, precision, recall, f1 score. Moreover you will get also a summary of the performances class by class, thanks to the get_prediction_data function. A detailed guide for its use and on how to choose the parameters you need to pass it can be found in the [utils](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/utils.ipynb) notebook.
 
 ## Authors
 * **Andrea Barucci, MSc, PhD** - *Researcher at the Institute of Applied Physics "Nello Carrara" (IFAC) – National Council of Research (CNR), Sesto Fiorentino, Italy.* Email address: <a.barucci@ifac.cnr.it>
