@@ -47,35 +47,21 @@ where *myenv* is the new virtual environment name.
 
 INSERT HARDWARE, SO OF DEVELOPMENT/DEPLOYMENT
 
-## Usage [TO REDO]
+## Usage
 
 
 About the notebooks:
-- [model](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/model.ipynb) keeps all the model we used, such as Xception, InceptionV3, Glyphnet etc.
-- [util](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/util.ipynb) holds a set of useful functions that will be used along the entire code, e.g. to load the dataset, to plot the loss over training etc.
-- [util_img](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/util_img.ipynb) has a bunch of useful functions to work on images, e.g. resize, background elaboration, getting some statistical indicator such as mean, variance etc.
-- [dataset_preprocessing](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/dataset_preprocessing.ipynb) is the code dedicated to image preprocessing. It strongly uses util_img and outputs the datasets with resized and "cleaned" images.
-- [classification_VFinal](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/classification_VFinal.ipynb) is the main code. Here Glyphnet's magic happens.
-```
-python Schizotypy_group_prediction.py --help
+- [utils](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/utils.ipynb) holds a set of useful functions that will be used along the entire code, e.g. to load the dataset, to plot the loss over training, the architecture of glyphnet, the list of allowed labels etc.
+- [glyphnet](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/glyphnet.ipynb) is the main code. Here you will be able to load your dataset for test purposes and to make predictions using the [weights](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/weights.hdf5) of our model.
 
-Usage: Schizotypy_group_prediction.py [-h] XLSX_file
+Please remember that this version of Glyphnet works on images with resolution 100x100 and in .jpg format (also other formats should work but we didn't test them yet).
 
-A machine learning predicitive model, optimized in a nested stratified cross-validation loop repeated 1000 times
+Make sure that your dataset matches the labels we used that are listed as allowed_labels in the [utils](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/utils.ipynb) notebook. You also should save your images as filename_LABEL.jpg, where LABEL is the Gardiner code (all caps).
 
-positional arguments:
-  XLSX_file   XLSX file including data
+To use the code you simply need to specify the path to your dataset, that can also be a directory containing other directories provided that the load process looks for all the .jpg file inside the given folder.
 
-optional arguments:
-  -h, --help  show this help message and exit
-```
-
-## Ouputs (TO DO)
-The outputs are stored in two different folders: *Figures* contains the ROC curve plot and *csv\_results* includes all the csv files. Specifically:
-
-* *CombsSelected.csv* reports the number of times each feature combination has been selected
-* *Scores.csv* includes average and standard deviation values of balanced accuracy, area under the ROC curve, sensitivity and specificty obtained both in the training and test sets
-* *tpr.csv* reports average true positive rate values (among repetitions and nested CV splits)
+## Ouputs
+After the prediction, you will get some meaningful metrics, such as accuracy, precision, recall, f1 score. Moreover you will get also a summary of the performances class by class, thanks to the get_prediction_data function. A detailed guide for its use and to choose the parameters you need to pass it can be found in the [utils](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/utils.ipynb) notebook.
 
 ## Authors
 * **Andrea Barucci, MSc, PhD** - *Researcher at the Institute of Applied Physics "Nello Carrara" (IFAC) – National Council of Research (CNR), Sesto Fiorentino, Italy.* Email address: <a.barucci@ifac.cnr.it>
