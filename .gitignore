@@ -1,1 +1,17 @@
+/.idea
 /.ipynb_checkpoints
+/checkpoints
+/logs
+usage.txt
+train.ipynb
+100x100.ipynb
+D1.ipynb
+proveacaso.ipynb
+results.ipynb
+glyphnet.yml
+classification_VFinal.ipynb
+createDataset.ipynb
+dataset_preprocessing.ipynb
+model.ipynb
+util.ipynb
+util_img.ipynb
