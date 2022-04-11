@@ -31,9 +31,9 @@ pip install pandas==1.2.0
 pip install numpy==1.19.5
 pip install openpyxl==3.0.5
 pip install scikit-learn==0.24.0
-pip install tensorflow (ADD VERSION)
-pip install statistics (ADD VERSION)
-pip install scipy (ADD VERSION)
+pip install tensorflow==2.7.0
+pip install statistics==1.0.3.5
+pip install scipy==1.7.3
 ```
 
 ### Create a new Python virtual environment using conda and the requirements.txt file:
