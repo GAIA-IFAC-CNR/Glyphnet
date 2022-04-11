@@ -1,6 +1,6 @@
 # Glyphnet
 
-*Glyphnet* is a repository that includes an example of a deep learning approach to ancient Egyptian hieroglyphs classification, ...
+*Glyphnet* is a repository that includes an example of a deep learning approach to ancient Egyptian hieroglyphs classification.
 
 If you use this repository, please cite it as:
 
@@ -8,7 +8,7 @@ A. Barucci, C. Cucci, M. Franci, M. Loschiavo and F. Argenti, **A Deep Learning 
 
 @ARTICLE{9528382,  author={Barucci, Andrea and Cucci, Costanza and Franci, Massimiliano and Loschiavo, Marco and Argenti, Fabrizio},  journal={IEEE Access},   title={A Deep Learning Approach to Ancient Egyptian Hieroglyphs Classification},   year={2021},  volume={9},  number={},  pages={123438-123447},  doi={10.1109/ACCESS.2021.3110082}}
 
-This document provides a quick introduction to the SCRIPT NAME HERE to help new users get started. In addition to the source code, we also provide a [link](https://en.wikipedia.org/wiki/Pyramid_of_Unas) to the dataset containing 4210 manually annotated images of Egyptian hieroglyphs found in the Pyramid of Unas. The dataset can be dowloaded [here](http://iamai.nl/downloads/GlyphDataset.zip).
+This document provides a quick introduction to the *glyphnet.ipynb* notebook to help new users get started. In addition to the source code, we also provide a [link](https://en.wikipedia.org/wiki/Pyramid_of_Unas) to the dataset containing 4210 manually annotated images of Egyptian hieroglyphs found in the Pyramid of Unas. The dataset can be dowloaded [here](http://iamai.nl/downloads/GlyphDataset.zip).
 
 Authors wishes to express their gratitute for the [seminal work of Franken](https://github.com/morrisfranken/glyphreader).
 
@@ -31,9 +31,9 @@ pip install pandas==1.2.0
 pip install numpy==1.19.5
 pip install openpyxl==3.0.5
 pip install scikit-learn==0.24.0
-pip install tensorflow (ADD VERSION)
-pip install statistics (ADD VERSION)
-pip install scipy (ADD VERSION)
+pip install tensorflow 
+pip install statistics
+pip install scipy
 ```
 
 ### Create a new Python virtual environment using conda and the requirements.txt file:
@@ -45,20 +45,15 @@ conda create --name myenv --file requirements.txt
 ```
 where *myenv* is the new virtual environment name.
 
-INSERT HARDWARE, SO OF DEVELOPMENT/DEPLOYMENT
 
 ## Usage
 
-
 About the notebooks:
-- [utils](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/utils.ipynb) holds a set of useful functions that will be used along the entire code, e.g. to load the dataset, to plot the loss over training, the architecture of glyphnet, the list of allowed labels etc.
-- [glyphnet](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/glyphnet.ipynb) is the main code. Here you will be able to load your dataset for test purposes and to make predictions using the [weights](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/weights.hdf5) of our model.
+- [glyphnet.ipynb](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/glyphnet.ipynb) is the main code. Here you will be able to load your dataset for test purposes and to make predictions using the [weights](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/weights.hdf5) of our model. Please remember that this version of Glyphnet works on images with resolution 100x100 and in .jpg format (also other formats should work but we didn't tested them yet).
+Make sure that your dataset matches the labels we used that are listed as *allowed_labels* in the [utils](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/utils.ipynb) notebook. You should save your images as filename_LABEL.jpg, where LABEL is the Gardiner code (all caps)(e.g. the file 00001_D2.jpg will be accepted by Glyphnet and treated as an example of D2 glyph).
+To use the code you simply need to specify the path to your dataset folder, including all the .jpg files (also store in subfolders).
+- [utils.ipynb](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/utils.ipynb) holds a set of useful functions that will be used along the entire code, e.g. to load the dataset, to plot the loss over training, the architecture of glyphnet, the list of allowed labels etc.
 
-Please remember that this version of Glyphnet works on images with resolution 100x100 and in .jpg format (also other formats should work but we didn't test them yet).
-
-Make sure that your dataset matches the labels we used that are listed as allowed_labels in the [utils](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/utils.ipynb) notebook. You also should save your images as filename_LABEL.jpg, where LABEL is the Gardiner code (all caps)(e.g. the file 00001_D2.jpg will be accepted by Glyphnet and treated as an example of D2 glyph).
-
-To use the code you simply need to specify the path to your dataset, that can also be a directory containing other directories provided that the load process looks for all the .jpg file inside the given folder.
 
 ## Ouputs
 After the prediction, you will get some meaningful metrics, such as accuracy, precision, recall, f1 score. Moreover you will get also a summary of the performances class by class, thanks to the get_prediction_data function. A detailed guide for its use and on how to choose the parameters you need to pass it can be found in the [utils](https://github.com/GAIA-IFAC-CNR/Glyphnet/blob/main/utils.ipynb) notebook.
